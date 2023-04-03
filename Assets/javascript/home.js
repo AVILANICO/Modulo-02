@@ -1,12 +1,7 @@
 const contenedor = document.getElementById('contenedor-eventos');
-
 const arrayEventos = data.eventos;
-
-const eventoSolo = arrayEventos[0];
-
-// console.log(arrayEventos[0])
-
 let plantilla = '';
+
 
 for (const evento of arrayEventos) {
   plantilla += crearEventos(evento);
@@ -22,11 +17,9 @@ function crearEventos(eventoSolo){
               <p class="card-text"> Price: ${eventoSolo.description} </p>
               <div class = "div-precioBoton">
                 <p class="card-text"> Price: ${eventoSolo.price} </p>
-                <a href="" class="btn btn-primary">Details</a>
+                <a href="./assets/pages/details.html" class="btn btn-primary">Details</a>
               </div>
-            </div>
+            </div> 
           </div> 
 `
 }
-
-console.log(plantilla)

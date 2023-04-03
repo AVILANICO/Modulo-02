@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .navbar{
-    background-color: #1852b6; 
+    background-color: #00658a; 
 }
 .nav-item{
     padding-right: 1rem;
@@ -14,7 +14,12 @@
     color: white !important;
 }
 #carouselExample{
-    background-color: #0069ffb8;
+    background-image: url(https://media.istockphoto.com/id/1423259276/es/foto/fondo-abstracto-azul-negro-degradado-de-color-mate-fondo-oscuro-y-elegante-con-espacio-para-el.jpg?s=612x612&w=0&k=20&c=XOV20B9KQWdAv8MJEjzoFuQ7bznN0vvCFzaEqu5J1q0=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+
 }
 .carousel-item a{
     color: white;
@@ -22,7 +27,7 @@
     transition: all .3s ease-in-out;
 }
 .carousel-item a:hover{
-    color: black;
+    color: #ff0000;
 }
 #estoy{
     border: 2px solid red;
@@ -61,7 +66,7 @@ h1{
 }
 
 .divCheckBoxBuscador .container-fluid{
-    background-color: #1e61d2; 
+    background-color: #00658a; 
     color: white;
     height: 8vh;
     display: flex;
@@ -69,27 +74,39 @@ h1{
     justify-content: space-between;
 }
 .checkBox{
-    width: 50vw;
+    width: 70vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #search{
     width: 20vw;
+    border-radius: 1rem;
 }
 .buscador{
     width: 25vw;
 }
 .buscador button{
     width: 2rem;
+    border-radius: 1.5rem;
 }
 main{
-    background-color:  #658caf;
+    background-image: url(https://media.istockphoto.com/id/1423259276/es/foto/fondo-abstracto-azul-negro-degradado-de-color-mate-fondo-oscuro-y-elegante-con-espacio-para-el.jpg?s=612x612&w=0&k=20&c=XOV20B9KQWdAv8MJEjzoFuQ7bznN0vvCFzaEqu5J1q0=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.card-body{
+    background-color: #cfcfcd;
+}
+.btn{
+    background-color: #00658a !important;
 }
 #imgCards{
     height: 30vh;
@@ -101,15 +118,17 @@ main{
 .mainFormulario{
     height: 70vh;
     display: flex;  
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 form{
+    color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .5rem;
     font-size: 24px;
-    font-weight: bolder;
 }
 .formulario{
     height: 50vh;
@@ -117,6 +136,9 @@ form{
     display: flex;
     flex-direction: column;
     gap: 5rem;
+}
+form input{
+    width: 60rem;
 }
 .fieldForm{
     display: flex;
@@ -128,9 +150,8 @@ form{
 #submit{
     width: 5rem;
     font-size: 18px;
-    align-self: flex-end;
+    border-radius: 2rem;
 }
-
 .mainStats{
     height: 70vh;
     display: flex;
@@ -138,7 +159,7 @@ form{
     align-items: center;
 }
 table{
-    background-color: #5183d8; 
+    background-color: #cfcfcd; 
     border: 3px solid black;
     width: 90vw;
     height: 55vh;
@@ -149,15 +170,13 @@ table tbody td{
     color: black;
 }
 table th{
-    background-color: #1852b6; 
+    background-color: #00658a; 
     height: 1rem;
     font-size: 1.3rem;
 }
-
-
 footer{
-    background-color: black;
-    height: 11vh;
+    background-color: #00658a;
+    height: 8vh;
     color: white;
     display: flex;
     align-items: center;
@@ -171,58 +190,191 @@ span{
     display: flex;
     gap: 1rem;
 }
+.mainDetails{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divDetails{
+    border: 1rem inset white;
+    height: 60vh;
+    width: 80vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.divDetails img{
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid white;
+}
+.divTexto{
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #00658a;
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.divTexto h1{
+    text-align: center;
+
+}
 
 
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
-@media only screen and (min-width: 320px) and (max-width: 575px){
+    .mainDetails{
+        height: 110vh;
+    }
+    .divDetails{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .divDetails img{
+        width: 80vw;
+        height: 40vh;
+    }
+    .divTexto{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+    }
+    .divTexto h5{
+        font-size: 1rem;
+    }
+    .divTexto h1{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
     h1{
-        font-size: 4rem !important;
+        font-size: 1.5rem !important;
         width: 100vw;
     }
-
+    .mainStats{
+        height: 75vh !important;
+    }
     footer{
         height: 15vh;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+    .mainFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario{
+        width: 100vw;
+    }
     form{
+        height: 80vh;
         font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    form input{
+        width: 19rem;
     }
     #mensaje{
         height: 5rem;
     }
-    table th{
-        font-size: .8rem;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    #search{
-        width: 10vw;
-    }
     .divCheckBoxBuscador .container-fluid{
         height: 25vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .checkBox{
+        margin-top: 1rem;
+        width: 100vw;
+    }
+    .buscador{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search{
+        width: 15rem;
     }
     .mainStats{
         height: 60vh;
     }
     table{
         font-size: 10px;
-        height: 50vh;
+        height: 60vh;
+        width: 95vw;
+        border-color: rgb(12, 61, 29);
     }
-    table thead th{
-        font-size: 12px;
+    th{
+        font-size: 14px !important;
     }
     table tbody td{
         height: .3rem;
     }
+    .navbar{
+        font-size: .8rem;
+    }
+    .nav-item{
+        padding-right: .2rem;
+    }
+    nav .container-fluid{
+        width: 100vw;
+        display: flex;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    #search{
-        width: 17vw;
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+
+    .mainDetails{
+        height: 130vh;
     }
+    .divDetails{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .divDetails img{
+        width: 80vw;
+        height: 60vh;
+    }
+    .divTexto{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+    }
+    .divTexto h5{
+        font-size: 1rem;
+    }
+
+    .mainFormulario{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    form{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form input{
+        width: 40rem;
+    }
+
     table{
         font-size: 12px;
         height: 50vh;
@@ -234,16 +386,3 @@ span{
         height: .5rem;
     }
 }
-
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .navbar{
-        font-size: .8rem;
-    }
-    .nav-item{
-        padding-right: .2rem;
-    }
-    #search{
-        width: 15vw;
-    }
-}
-
